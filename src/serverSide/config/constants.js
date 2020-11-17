@@ -8,7 +8,7 @@ if (process.env.NODE_ENV !== 'production') {
 }
 
 var devConfig = {
-  MONGO_URL: 'mongodb://' + process.env.DB_USER + ':' + process.env.DB_PASS + '@ds141368.mlab.com:41368/votingapp',
+  MONGO_URL: 'mongodb://' + process.env.DB_USER + ':' + process.env.DB_PASS + '@ds141368.mlab.com:41368/online-polling-website',
   TWITTER_STRATEGY: {
     consumerKey: process.env.TWITTER_CONSUMER_KEY,
     consumerSecret: process.env.TWITTER_CONSUMER_SECRET,
@@ -17,11 +17,11 @@ var devConfig = {
   }
 };
 var prodConfig = {
-  MONGO_URL: 'mongodb://' + process.env.DB_USER + ':' + process.env.DB_PASS + '@ds141368.mlab.com:41368/votingapp',
+  MONGO_URL: 'mongodb://' + process.env.DB_USER + ':' + process.env.DB_PASS + '@ds141368.mlab.com:41368/online-polling-website',
   TWITTER_STRATEGY: {
     consumerKey: process.env.TWITTER_CONSUMER_KEY,
     consumerSecret: process.env.TWITTER_CONSUMER_SECRET,
-    callbackURL: 'https://ddcs-votingapp.herokuapp.com/api/auth/twitter/callback',
+    callbackURL: 'https://online-polling-website.herokuapp.com/api/auth/twitter/callback',
     passReqToCallback: true
   }
 };
