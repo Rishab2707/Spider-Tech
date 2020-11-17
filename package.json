@@ -15,7 +15,8 @@
 		"dev:server": "nodemon src/serverSide/server.js",
 		"build": "npm-run-start",
 		"build:client": "webpack --progress",
-		"build:server": "babel src/serverSideES6 --out-dir src/serverSide"
+		"build:server": "babel src/serverSideES6 --out-dir src/serverSide",
+		"heroku-postbuild": "npm run build"
 	},
 	"dependencies": {
 		"axios": "^0.16.2",
